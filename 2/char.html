@@ -1,0 +1,43 @@
+
+<!Doctype html> <!-- HTML5 를 선언-->
+<html lang = "ko">          <!-- 하글 사용-->
+    <head>
+        <meta charset = "UTF-8">        <!-- 한글이 깨어지지 않도록 처리-->
+        <!-- 뷰설정 : PC,노트북, 테블릿, 핸드폰에서 최적화 해서 보도록 설정-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> &lt; 특수문자 처리 &gt;  </title>
+        <!-- &lt; < 왼쪽 꺽새 , &gt; > 오른쪽 꺽새-->
+    </head>
+    <body>
+            <!-- &num; 은 # 으로 처리됨., &#38; 은 & 로 처리., &nbsp; 공백 , &copy; ©-->
+        &num; 개발을 위한 웹 프로그램 &num;
+        &#38; HTML &#38; CSS &#38; JavaScript
+        
+        &copy; 2022 &copy;
+
+        <br> <br>
+        <hr size = "9" widht = "600px">
+        <!-- pre 태그를 사용하면 공백, 엔터 , 특수문자 를 그대로 출력 해 주는 태그,, 꺽새 << 는 오류발생.-->
+        <pre>!@#$%^&*()    ,            ,   
+            #풀 스택 개발자#
+            HTML 5 & CSS & JavaScript       JQuery
+
+            Front End 기술 들 입니다.
+
+        </pre>
+
+        <br><br>
+        기본 글자 입니다. <br> <br>
+        <b>강조글자</b>         <!-- 글자를 강조해서 출력 -->
+        <strong> 강조글자 </strong> <br> <br>
+        <i> 이텔릭 체로 출력</i> <br> <br>
+        <ins>글자 아래에 라인 입력</ins> <br> <br>
+        <del> 글자 중간에 라인 </del> <br> <br>
+        텍스트 <sub>아래 첨자</sub> <br> <br>
+        텍스트 <sup>위 첨자</sup> <br> <br>
+
+
+    </body>
+</html>
