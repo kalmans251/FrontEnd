@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{
+            text-decoration: none;color:red;opacity: 0.5;
+        }
+        a:hover{
+            text-decoration: none;color:black;font-weight: bold;
+        }
+        header{width: 100%;height:100px;border:0px solid red;background-color: rgba(0, 128, 0, 0.397);}
+        nav{width:20%;height:500px;border:0px solid red;
+            float:left;background-color: rgba(255, 0, 0, 0.357);}
+        section{width:60%;height:500px;border:0px solid red;background-color:gray;;
+            float:left;}
+        aside{width:20%; height:500px ;border:0px solid red;
+            }
+        footer{width:100%;height:100px;border:0px solid red;
+            clear:both;background-color: rgba(0, 128, 0, 0.397);}
+        .s1{
+            background-color: rgba(255, 0, 0, 0.357);
+            float:right;
+            width:20%;
+            
+        }
+    </style>
+</head>
+<body>
+    <!--
+        1.header : 페이지 상단에 주로 오고, 메뉴 등의 콘텐츠
+        2.nav
+        3.section: 주로 아티클의 그룹핑 -> <article> : 하나의 컨텐츠 (하나의 기사)
+        4.aside
+        5.fooder : 페이지 하단에 주로 위치, 저작권 , 주소 , 전화번호
+        순으로
+        nav, section ,aside 는 float 속성을 사용해서 같은 라인으로 출력
+    -->
+    
+    <div class = "fix">
+        <header> 최상단의 레이아웃 - 주로 상단에 내용</header>
+        <!-- nav , section , aside 는 float 속성을 사용해서 같은 라인으로 출력-->
+        <nav> NAV - 메뉴 내용을 적용할때 사용됨<p />
+            <span> 목차 </span>
+            <ul>
+                <li><a href="http://www.google.com">구글</a></li>
+                <li>에플</li>
+                <li>오라클</li>
+                <li>자바</li>
+                <li>아마존</li>
+                <li>에져</li>
+                <li>MySQL</li>
+            </ul>
+        
+        </nav>
+        <section>
+            SECTION
+            <article> 컨텐츠 1</article>
+            <article> 컨텐츠 2</article>
+            <article> 컨텐츠 3</article>
+        </section>
+        <section class="s1">
+            SECTION2 - aside
+        <aside>  오른쪽 , 왼쪽 에 내용</aside>
+         </section>
+        <footer> 최하단의 레이아웃 - 회사주소 전화번호</footer>
+        
+    </div>
+
+
+
+</body>
+</html>

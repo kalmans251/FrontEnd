@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-weight: bold;font-size:12px;
+        }
+        P{ width:400px;height:50px;border:1px solid red;}
+        .b1{
+            position:static;    /*포지션 설정이 작동 안됨, 문서 흐름에 따라 배치됨*/
+            top:100px;left:100px;
+        }
+        .b2{
+            position:relative;    /*포지션 설정이 작동 됨*/
+            top:10px;left:10px;
+        }
+    </style>
+
+</head>
+<!--
+    상대 위치 설정은 자신의 박스가 기본적으로 위치한 곳이 기준점
+    --포지션 위치가 정의 되지 않는 기본 상태가 기준점
+-->
+<body>
+    <h1> Position Style 2</h1>
+    <p class ="b1"> 상대 위치 설정 적용 1 </p>
+    <p class ="b2"> 상대 위치 설정 적용 2 </p>
+    <p class ="b3"> 상대 위치 설정 적용 3 </p>
+</body>
+</html>
