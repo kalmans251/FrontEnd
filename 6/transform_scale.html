@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:100px;
+            border:1px solid red;
+            height:100px;
+            margin: 50px;
+            background-color: skyblue;
+        }
+        #box1{
+            transform:scale(0.5,0.5);
+        }
+        #box2{
+            transform:scale(2,1.5);
+        }
+    </style>
+</head>
+<body>
+    <div> 기본 박스 </div>
+    <div id = "box1"> 박스1 (0.5 배로 축소) </div>
+    <div id = "box2"> 박스2 (가로2배 세로로 1.5배</div>
+
+    <!-- 2차원 변환 함수 
+        translate() : 평행 이동 변환 , transform : translate(50px, 100px)
+        roatate() : 회전 변환 , transform : rotate (20deg)
+        scale() : 크기변환 , transform : scale(2,3) , x:2배 , y축: 3배
+        skewX() : x 축 기울기 변환, transform : skewX(20deg)
+        skewY() : y 축 기울기 변환, transform : skewY(30deg)
+        skew() : x,y 기울기 변환 , transform : skew(20deg , 30deg)
+        
+
+    -->
+</body>
+</html>

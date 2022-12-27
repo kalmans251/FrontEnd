@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width:1000px;
+            margin-left: auto;
+            margin-right:auto;
+            font-size: 13px;
+            height:800px;
+            
+        }
+        li{
+            list-style-type: none;
+        }
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        #header_box{
+            padding-bottom:0px;
+            width:96%;
+            margin-left:2%;
+        }
+        #header_line{
+            width:100%;
+            height:1px;
+            background-color: rgba(98, 97, 97, 0.515);
+        }
+        #header_img_box > img{
+            margin-left:15px;
+        }
+        #header_box #header_img_box{
+            margin:15px;
+        }
+        #header_box > div {
+            display: inline-block;
+        }
+        #header_box > #login_inroll_etc{
+            float:right;
+            margin-top:50px;
+            margin-right:40px;
+        }
+        #header_box > nav > img{
+           width:160px;
+           margin-left:14px;
+           margin-right:10px;
+           margin-top:20px;
+           margin-bottom:10px;
+        }
+
+        /* main */
+       #main_article article {
+        float:left;
+       }
+       #main_article > article > ul {
+        float:left;
+       }
+       #clear{
+        clear:both;
+       }
+       #main_upperimg {
+        margin-left:38px;
+       }
+       #main_upperimg > img{
+        width:300px;
+        height:110px;
+       }
+       article{
+        width:300px;
+       }
+       #main_article{
+        margin-left:50px;
+       }
+       #more{
+        margin-left:140px;
+       }
+       #notation_char li{
+        font-size:12px;
+
+       }
+       #date_char li{
+        font-size:12px;
+        margin-left:18px;
+       }
+       #header_line_article{
+            margin-left:2%;
+            width:96%;
+            height:1px;
+            background-color: rgba(98, 97, 97, 0.515);
+       }
+       section > div{
+        float:left;
+       }
+
+       #final_section{
+        margin-left:25px;
+        margin-top:20px;
+       }
+       #main_article li{
+        margin-top:3px;
+       }
+       #final_section li{
+        margin-top:5px;
+       }
+
+       /*footer Line*/
+       #final_section{
+            margin-left:2%;
+            width:96%;
+            height:200px;
+            box-shadow: 0px 3px rgb(69, 175, 216);
+       }
+       #footer_left_article p{
+        margin:20px;
+        
+        font-size: 2px;
+        width:315px
+       }
+       #footer_left_article img{
+        margin:20px;
+       }
+       footer article{
+        float:left;
+       }
+       #footer_right_article{
+        float:right;
+        margin-right:20px;
+       }
+       #footer_right_article span{
+        margin-top:26px;
+        float:right;
+        font-size: 18px;
+        font-weight: bold;
+        color:rgb(87, 207, 207)
+       }
+       #footer_right_article select{
+        float:right;
+       }
+       #footer_right_article #footer_img_box{
+        float:right;
+       }
+    </style>
+</head>
+<body>
+    <header id =header_box>
+        <div id = header_img_box>
+            <img src ="img/logo.gif" > 
+            <img src = "img/moto.gif">
+        </div >
+        <div id = "login_inroll_etc">로그인 | 회원가입 | 사이트맵 | 회사소개</div>
+        <div id="header_line"></div>
+        <nav>
+            <img src ="img/menu01.gif" > <img src ="img/menu02.gif" > <img src ="img/menu03.gif" > <img src ="img/menu04.gif" > <img src ="img/menu05.gif" > 
+        </nav>
+
+    </header>
+
+    <main>
+        
+        <section id="main_upperimg"><img  src = "img/banner01.gif"> <img src = "img/banner02.gif"> <img src = "img/banner03.gif"></section>
+        <div id="main_article">
+            <article>
+                <img src = "img/customer.gif">
+            </article>
+            <article>
+                <img src = "img/notice.gif">
+                <img id="more" src = "img/more.gif">
+                <ul id = "notation_char">
+                    <li>
+                        새로운 상품의 출시를 알려드립니다.
+                    </li>
+                    <li>
+                        새로운 상품의 출시를 알려드립니다.
+                    </li>
+                    <li>
+                        새로운 상품의 출시를 알려드립니다.
+                    </li>
+                    <li>    
+                        새로운 상품의 출시를 알려드립니다.
+                    </li>
+                </ul>
+                <ul id="date_char">
+                    <li>
+                        2014-03-03
+                    </li>
+                    <li>
+                        2014-03-03
+                    </li>
+                    <li>
+                        2014-03-03
+                    </li>
+                    <li>    
+                        2014-03-03
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <img src = "img/faq.gif">
+                <div id="clear"></div>
+                <img src = "img/cal.gif">
+            </article>
+        </div>
+
+        <div id="clear"></div>
+        <div id="header_line_article"></div>
+        <section id="final_section">
+            <div>
+                <ul><img src = "img/menu01.gif">
+                    <li>손해보험이란?</li>
+                    <li>나에게 필요한 보험은?</li>
+                    <li>보험약관의 중요성</li>
+                    <li>손해보혐의 특징</li>
+                </ul>
+            </div>
+            <div>
+                <ul><img src = "img/menu02.gif">
+                    <li>보험료 저렴</li>
+                    <li>신속한 처리 및 보상</li>
+                    <li>막기 시 원리금 보장</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul><img src = "img/menu05.gif">
+                    <li>전국 지접 안내</li>
+                    <li>손해배상 안내</li>
+                    <li>손해보험 FAQ</li>
+                    <li>질문과 답변</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul><img src = "img/menu04.gif">
+                    <li>제약 조회/변경</li>
+                    <li>보험 계약 갱신</li>
+                    <li>보험료 납입</li>
+                    <li>증명서 발급</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul><img src = "img/menu05.gif">
+                    <li>공인인증센터</li>
+                    <li>인증서 발급/갱신</li>
+                    <li>인증서 폐기</li>
+                    <li>웹 로그인</li>
+                </ul>
+            </div>
+
+            <div>
+                <ul><img src = "img/menu02.gif">
+                    <li>기업소개</li>
+                    <li>찾아오시는법</li>
+                </ul>
+            </div>
+
+        </section>
+        <div id="footer_line"></div>
+        <footer>
+            <article id="footer_left_article">
+                <p>
+                    개인정보 취급방침 | 이용 안내 | 이메일 무단수집 거부<br>
+                    서민금융119서비스 | 보험범죄 신고 | 전자 민원 접수 | 보험약관 안내 | 금융사기 신고센터<br>
+                </p>
+                <img src = "img/address.gif">
+            </article>
+
+            <article id="footer_right_article">
+                <span >고객센터 1588-1234</span>
+                <div id="clear"></div>
+                <select>
+                    <option>네이버</option>
+                    <option>구글</option>
+                    <option>다음</option>
+                </select>
+
+                <div id="clear"></div>
+                <div id="footer_img_box">
+                <img src = "img/f.gif">
+                <img src = "img/b.gif">
+                <img src = "img/t.gif">
+                </div>
+            </article>
+        </footer>
+    </main>
+</body>
+</html>
