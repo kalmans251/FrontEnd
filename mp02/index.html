@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .wrap{
+            width:1100px;
+            margin:0 auto;
+           
+        }
+        header{
+            height:80px;
+            width:90%;
+            margin:0 auto;
+        }
+        nav{
+            float:left;
+            
+            width:22%;
+        }
+        main{
+            
+            margin-left:22%;
+            width:78%;
+        }
+        footer{
+            height:100px;
+            
+            box-shadow: 0px -1px 0px gray;
+        }
+        #logo{
+            float:left;
+            margin-right:40px;
+            margin-top:3px;
+        }
+        #main_menu_bg{
+            position:absolute;
+        }
+        #upper_menu{
+            position:relative;
+            width:149px;
+            float:left;
+            text-align: center;
+        }
+        #upper_menu > a {
+            margin-left:30px;
+            position:relative;
+            bottom:-10px;
+            font-size:13px;
+            
+        }
+        #home_login_etc{
+            text-align: right;
+            margin-top: 11px;
+            margin-bottom:11px;
+            position:relative;
+            left:-70px;
+            font-size:12px;
+        }
+        #login{
+            margin-left:37px;
+            margin-top: 10px;
+            background-color: rgba(207, 191, 191, 0.223);
+            height:110px;
+            width:186px;
+            border-radius:10px;
+            box-shadow: 0px 0px 3px gray;
+        }
+        #login > input{
+            width:100px;
+            margin-left:10px;
+        }
+        #ttl_login{
+            margin-left:10px;
+            margin-top:10px;
+            margin-bottom:13px;
+            float:left;
+        }
+        #clear{
+            clear:both;
+        }
+        #btn_login{
+            float:right;
+            position:relative;
+            left:-6px;
+            top:-20px;
+            border-radius: 10px;
+        }
+        #inroll{
+            font-size: 10px;
+            font-weight: bold;
+            border:none;
+            float:left;
+            position:relative;
+            left:10px;
+            top:6px;
+            
+        }
+        #lookfor_id_pw{
+            font-size:8px;
+            border:none;
+            position:relative;
+            left:80px;
+            top:-14px;
+           
+            
+        }
+        #login p {
+            position:relative;
+            top:-30px;
+            left:64px;
+            font-size: 11px;
+        }
+        #community{
+            background-color: rgba(207, 191, 191, 0.223);
+            width:186px;
+            margin-top:15px;
+            margin-left:37px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 3px gray;
+            height: 130px;
+        }
+        #bang_m{
+            margin:10px;
+            position:relative;
+            top:10px;
+        }
+        #lines{
+            float:left;
+            width:90%;
+            height:1px;
+            background-color: rgba(128, 128, 128, 0.423);
+            position:relative;
+            top:33px;
+            margin-left:5%;
+        }
+        #notation{
+            box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.457);
+            width:361px;
+        }
+        #more{
+            float:right;
+        }
+        #notation_img{
+            float:left;
+            margin-top:10px;
+            margin-left:7px;
+        }
+        
+        #notation_box > ul{
+            float:left;
+        }
+        #notation_box2 > ul{
+            float:left;
+        }
+        
+        #notation_box li {
+            margin-top:3px;
+            font-size: 13px;
+            margin-left:13px;
+        }
+        #notation_box2 li {
+            margin-top:3px;
+            font-size: 13px;
+            margin-left:13px;
+        }
+        
+        #notation_box{
+            margin-left:13px;
+        }
+
+        
+        #main_img{
+            margin:7px;
+        }
+        #notation_box2{
+            margin-top:110px;
+            margin-left:13px;
+        }
+        #youtube_box{
+            float:left;
+            position:relative;
+            top:-158px;
+            left:30px;
+        }
+        #youtube{
+            width:350px;
+            margin-bottom:10px;
+            box-shadow: 0px 1px rgba(0, 0, 0, 0.457);
+        }
+        .index_main span{
+            font-weight: bold;
+            position:relative;
+            top:-5px;
+            font-size: 14px;
+        }
+        #youtube_box > #youtube_center{
+            text-align: center;
+        }
+        footer > div{
+            float:left;
+        }
+        #footer_logo{
+
+        }
+        #addr{
+            
+            bottom:80px;
+        }
+        #icons{
+            float:right;
+        }
+        #poto{
+            background-color: rgba(207, 191, 191, 0.223);
+            border-radius: 8px;
+            height:190px;
+            box-shadow: 0px 0px 3px gray;
+        }
+        #poto_box{
+            width:97%;
+            margin:0 auto;
+            position:relative;
+            bottom:156px;
+            height:100px;
+        }
+        #poto >div > div{
+            float:left;
+            margin:20px;
+            margin-top:30px;
+            position:relative;
+            left:40px;
+
+        }
+        #poto p {
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class = wrap>
+
+        <header>
+
+            <div id = "logo"><img src = "img/logo.png"></div>
+            <div>
+                <div id = "home_login_etc">HOME | LOGIN | JOIN | NOTICE</div>
+                <div>
+                    <img id="main_menu_bg" src ="img/main_menu_bg.png">
+                    <div id="upper_menu"><a  href ="#" >자유 게시판</a></div>
+                    <div id="upper_menu"><a  href ="#" >기타 연주</a></div>
+                    <div id="upper_menu"><a  href ="#" >공동구매</a></div>
+                    <div id="upper_menu"><a  href ="#" >연주회 안내</a></div>
+                    <div id="upper_menu"><a  href ="#" >회원 게시판</a></div>
+                    
+                </div>
+            </div>
+        </header>
+
+        <nav>
+            <div id="login"> 
+                <img id="ttl_login" src="img/ttl_login.png">
+                <div id =clear></div>
+                <input type="text" name="id"><br>
+                <input type="text" name="pw">
+                <img id="btn_login" src="img/btn_login.gif">
+                <button id="inroll" value="inroll">회원가입</button>
+                <button id="lookfor_id_pw" value="lookfor_id_pw">아이디/비밀번호 찾기</button>
+                <p>|</p>
+            </div>
+            
+            <div id="community">
+                <div id = "lines"></div>
+                <ul id = "bang_m"><img src = "img/ttl_memo.gif">
+                    <li><img src = "img/icon_blue.gif"> 안녕하세요</li>
+                    <li><img src = "img/icon_blue.gif"> 안녕하세요</li>
+                    <li><img src = "img/icon_blue.gif"> 안녕하세요</li>
+                    <li><img src = "img/icon_blue.gif"> 안녕하세요</li>
+                </ul>
+                
+            </div>
+            
+            <div id="nav_etc"></div>
+
+        </nav>
+
+        <main class = "index_main"> 
+            <img id="main_img" src = "img/main_img.png">
+            <div id = "notation_box">
+                <div id = "notation"><img src="img/icon_green.gif"><span>공지사항</span><img id="more" src = "img/more.gif"></div>
+                <img id = "notation_img" src="img/book_pen.gif" >
+                <ul>
+                    <li>루바토 개편과 사이트 이용...</li>
+                    <li>루바토 개편과 사이트 이용...</li>
+                    <li>루바토 개편과 사이트 이용...</li>
+                    <li>루바토 개편과 사이트 이용...</li>
+                </ul>
+                <ul>
+                    <li>2017-09-20</li>
+                    <li>2017-09-20</li>
+                    <li>2017-09-20</li>
+                    <li>2017-09-20</li>
+                </ul>
+
+            </div>
+            
+            <div id="notation_box2">
+                <div id = "notation"><img src="img/icon_green.gif"><span>공지사항</span><img id="more" src = "img/more.gif"></div>
+                <img id = "notation_img" src="img/book_pen.gif" >
+                <ul>
+                    <li>루바토 개편과 사이트 이용...</li>
+                    <li>루바토 개편과 사이트 이용...</li>
+                    <li>루바토 개편과 사이트 이용...</li>
+                    <li>루바토 개편과 사이트 이용...</li>
+                </ul>
+                <ul>
+                    <li>2017-09-20</li>
+                    <li>2017-09-20</li>
+                    <li>2017-09-20</li>
+                    <li>2017-09-20</li>
+                </ul>
+                
+            </div>
+            
+            <div id="youtube_box">
+                <div id ="youtube"><img src="img/icon_green.gif"> <span>YOUTUBE 동영상</span> <img id="more" src = "img/more.gif"> </div>
+                <div id="youtube_center">
+                <iframe width="315" height="235" src="https://www.youtube.com/embed/saq8h5H5uf0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div id = "clear"></div>
+            <div id = "poto_box"><img src="img/icon_green.gif"><span>포토겔러리</span>
+                <div id="poto">
+                    <div>
+                        <div><img src = "img/img1.jpg"><p>기타 페스티벌 4중주</p></div>
+                        <div><img src = "img/img1.jpg"><p>기타 페스티벌 4중주</p></div>
+                        <div><img src = "img/img1.jpg"><p>기타 페스티벌 4중주</p></div>
+                     </div>
+
+                </div>
+            </div>
+            
+        </main>
+
+        <footer> 
+            <div id = "footer_logo">
+            <img src="img/footer_logo.gif">
+            </div>   
+            <div id="addr">
+            서울시 강남구 삼성동 1234 호 : 123-1234<br>
+            TEL : 031-123-1234 Email:email@domain.com<br>
+            COPYRIGHT (C) 루바토 ALL RIGHTS RESERVED
+            </div> 
+            <div id = "icons">
+                <img src="img/facebook.gif">
+                <img src="img/blog.gif">
+                <img src="img/twitter.gif">
+            </div>
+            
+        </footer>
+
+    </div>
+</body>
+</html>
