@@ -169,18 +169,52 @@
             float:right;
             margin:20px;
         }
+        table {
+        width: 100%;
+        border-top: 1px solid #444444;
+        border-collapse: collapse;
+        }
+        th, td {
+        border-bottom: 1px solid #444444;
+        border-left: 1px solid #444444;
+        padding: 10px;
+        }
+        th:first-child, td:first-child {
+        border-left: none;
+        }
+        tr:first-child > td:first-child{
+            text-align: center;
+            background-color: rgba(128, 128, 128, 0.307);
+        }
+        tr > td:first-child{
+            text-align: center;
+            font-size: 13px;
+            width:190px;
+        }
+        table{
+            width:750px
+        }
+        #ok_list{
+            float:right;
+            position: relative;
+            left:-110px;
+            top:10px;
+        }
+        a{
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
     <div class = wrap>
 
         <header>
-            <div id = "logo"><img src = "img/logo.png"></div>
+            <div id = "logo"><a href ="index.html" target ="_self"><img src = "img/logo.png"></a></div>
             <div>
                 <div id = "home_login_etc">HOME | LOGIN | JOIN | NOTICE</div>
                 <div>
                     <img id="main_menu_bg" src ="img/main_menu_bg.png">
-                    <div id="upper_menu"><a  href ="#" >자유 게시판</a></div>
+                    <div id="upper_menu"><a  href ="board_list.html" target="_self" >자유 게시판</a></div>
                     <div id="upper_menu"><a  href ="#" >기타 연주</a></div>
                     <div id="upper_menu"><a  href ="#" >공동구매</a></div>
                     <div id="upper_menu"><a  href ="#" >연주회 안내</a></div>
@@ -205,7 +239,7 @@
             <div id="nav_etc">
 
                 <ul>
-                    <li>+자유 게시판</li>
+                    <li><a href = "board_list.html">+자유 게시판</a></li>
                     <li>+방명록</li>
                     <li>+공지사항</li>
                     <li>+등업 요청</li>
@@ -222,7 +256,31 @@
         </nav>
 
         <main>
-
+            <div><img src = "img/comm.gif"></div>
+            <p style="font-weight: bold;">자유 게시판</p>
+            <table>
+                <tr>
+                    <td colspan="2">글쓰기</td>
+                    
+                </tr>
+                <tr>
+                    <td>이름</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>제목</td>
+                    <td><input style="width: 500px;" type="text"></td>
+                </tr>
+                <tr>
+                    <td>내용</td>
+                    <td><textarea cols="70" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td>업로드 파일</td>
+                    <td><input type="text"> <button >파일 선택</button> 선택된 파일 없음</td>
+                </tr>
+            </table>
+            <div id = "ok_list"><img src ="img/ok.png"><a href="board_list.html"><img src ="img/list.png"></a></div>
         </main>
 
         

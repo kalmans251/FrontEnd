@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+        }
+        a{
+            text-decoration-line: none;
+            color:white;
+            
+        }
+        
+        
+        #table_sectionbox{
+            margin:0 auto;
+        }
+        header{
+            background-color: blue;
+            color:white;
+            padding:20px;
+        }
+        nav{
+            background-color: rgba(214, 80, 205, 0.483);
+            padding:8px;
+        }
+        main{
+            background-color: rgba(128, 128, 128, 0.323);
+            font-weight: bold;
+            padding-top:70px;
+            padding-bottom:160px;
+        }
+        main > span{
+            font-weight: bold;
+            font-size: 30px;
+        }
+        
+        
+        footer{
+            background:linear-gradient(90deg,blue,blue,white);
+            padding:15px;
+            color:white;
+
+
+        } /* 0이상 767 이하 */
+        @media only screen and (max-width : 767px){
+        .c_m_4{width:25%;float:left;text-align: center;}
+        .c_m_3{width:50%;float:left;text-align: center;}
+        .c_m_2{width:75%;float:left;text-align: center;}
+        .c_m_1{width:100%;float:left;text-align: center;}
+        section{
+            margin:0 auto;
+            margin-top:50px;
+            width:400px;
+        }
+        /* 767이하 테이블 설정 */
+        section table{
+            border:1px solid rgb(98, 95, 95);
+        }
+        section table tr td{
+            border:1px solid rgb(98, 95, 95);
+            width:400px;
+            display:block;
+        }
+        /* 767이하 테이블 설정 */
+
+        }
+            /* 767 이상 */
+        @media only screen and (min-width : 768px){
+        .c4{width:25%;float:left;text-align: center;}
+        .c3{width:50%;float:left;text-align: center;}
+        .c2{width:75%;float:left;text-align: center;}
+        .c1{width:100%;float:left;text-align: center;}
+        section{
+            margin:0 auto;
+            margin-top:50px;
+            width:800px;
+        }
+        /* 767이상 테이블 설정 */
+        section table{
+            border:1px solid rgb(98, 95, 95);
+        }
+        section table tr td{
+            border:1px solid rgb(98, 95, 95);
+            width:400px;
+        }
+        section table tr td:last-child{
+            text-align: left;
+        }
+        section table tr:last-child td:last-child{
+            text-align: center;
+        }
+         /* 767이상 테이블 설정 끝*/
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <header class = "c1 c_m_1">쇼핑몰 회원관리 VER 1.0</header>
+    <nav class = "c1 c_m_1">
+        <div class = "c4 c_m_1"><a href = "#">회원등록</a></div>
+        <div class = "c4 c_m_1"><a href = "#">회원목록조회/수정</a></div>
+        <div class = "c4 c_m_1"><a href = "#">회원매출조회</a></div>
+        <div class = "c4 c_m_1"><a href = "#">홈으로</a></div>
+
+    </nav>
+    <main class="c1 c_m_1">
+        <span>쇼핑몰 회원 등록</span>
+        <section>
+            <table>
+                <tr>
+                    <td>회원번호(자동발생)</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>회원성명</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>회원주소</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>가입일자</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>고객등급[A:VIP,B:일반,C:직원]</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>도시코드</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"> <button>등록</button><button>조회</button></td>
+                    
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer class="c1 c_m_1">HRDKOREA Copyright@2016 ALL rights reserve. Human Resources Development Service of Korea</footer>
+
+</body>
+</html>

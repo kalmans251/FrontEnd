@@ -169,18 +169,49 @@
             float:right;
             margin:20px;
         }
+        table{
+            border-collapse: collapse;
+            width:750px;
+            
+            
+        }
+        tr:first-child td{
+            background-color: rgba(128, 128, 128, 0.113);
+            border-top:1px solid gray;
+            padding:10px;
+        }
+        tr:last-child td{
+            background-color: rgba(205, 197, 197, 0.346);
+            padding:13px;
+        }
+        tr:first-child td:last-child{
+            font-size: 13px;
+            width:240px;
+        }
+        #del_list_write{
+            float:right;
+            position:relative;
+            top:20px;
+            left:-110px;
+        }
+        #del_list_write > img{
+            margin-left:5px;
+        }
+        a{
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
     <div class = wrap>
 
         <header>
-            <div id = "logo"><img src = "img/logo.png"></div>
+            <div id = "logo"><a href ="index.html" target ="_self"><img src = "img/logo.png"></a></div>
             <div>
                 <div id = "home_login_etc">HOME | LOGIN | JOIN | NOTICE</div>
                 <div>
                     <img id="main_menu_bg" src ="img/main_menu_bg.png">
-                    <div id="upper_menu"><a  href ="#" >자유 게시판</a></div>
+                    <div id="upper_menu"><a  href ="board_list.html" target="_self" >자유 게시판</a></div>
                     <div id="upper_menu"><a  href ="#" >기타 연주</a></div>
                     <div id="upper_menu"><a  href ="#" >공동구매</a></div>
                     <div id="upper_menu"><a  href ="#" >연주회 안내</a></div>
@@ -205,7 +236,7 @@
             <div id="nav_etc">
 
                 <ul>
-                    <li>+자유 게시판</li>
+                    <li><a href = "board_list.html">+자유 게시판</a></li>
                     <li>+방명록</li>
                     <li>+공지사항</li>
                     <li>+등업 요청</li>
@@ -222,42 +253,34 @@
         </nav>
 
         <main>
-            <img src = "img/comm.gif">
-            <p>자유 게시판</p>
-            <div>
-                <table border="1">
-                    <tr align="center";background-color="gray">
-                        <td>번호</td>
-                        <td>제목</td>
-                        <td>글쓴이</td>
-                        <td>일시</td>
-                        <td>조회수</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>까스릉님의 선물인 보드카가 정말 독하네요!!!</td>
-                        <td>루바토</td>
-                        <td>2017-09-20</td>
-                        <td>15</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>까스릉님의 선물인 보드카가 정말 독하네요!!!</td>
-                        <td>루바토</td>
-                        <td>2017-09-20</td>
-                        <td>15</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>까스릉님의 선물인 보드카가 정말 독하네요!!!</td>
-                        <td>루바토</td>
-                        <td>2017-09-20</td>
-                        <td>15</td>
-                    </tr>
+            <div><img src = "img/comm.gif"></div>
+            <p style="font-weight:bold;font-size:19px;padding:10px;margin-top:8px;">자유 게시판</p>
+            
+            <table>
+                <tr>
+                    <td>까스릉님의 선물인 보드카가 정말 독하네요!!</td>
+                    <td>루바토 | 조회 : 208 | 2016-04-28 (09:20)</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <br>
+                        까스름님 고맙습니다.<br>
+                        까스름님 고맙습니다.<br>
+                        까스름님 고맙습니다.<br>
+                        까스름님 고맙습니다.<br>
+                        까스름님 고맙습니다.<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <img style="position:relative;top:-47px;" src="img/title_comment.gif">
+                        <textarea cols = "73" rows="5"></textarea>
+                        <img src="img/ok_ripple.gif">
 
-                </table>
-
-            </div>
+                    </td>
+                </tr>
+            </table>
+            <div id="del_list_write"><img src="img/delete.png"><a href="board_list.html"><img src ="img/list.png"></a><a href="board_writer.html"><img src ="img/write.png" ></a></div>
 
         </main>
 

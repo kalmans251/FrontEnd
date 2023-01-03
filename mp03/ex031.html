@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mp04_ex03_shop_cust</title>
+    <style>
+        * {margin : 0px; padding :0px;}
+        ul {list-style-type: none;}
+        .clear {clear : both;}
+   
+        .headline {
+        background-color: rgb(39, 39, 235);
+        height : 70px;
+        color : white;
+        text-align: center;
+        font-size: 23px;
+        font-weight: BOLD;
+        line-height: 70px;
+        }
+        nav {
+            background-color: rgb(195, 147, 240);
+            color :white;
+            height : 40px;
+            text-align: center;
+            line-height : 40px;
+            font-size : 13px;
+            width : 100%;
+        }
+        
+        main {
+            height : 500px;
+        }
+
+        #mainmenu {
+            width : 100%;
+        }
+        .main_ul li {
+            display: inline;
+            padding : 0  20px 0 20px;
+            font-weight : bold;
+            /* border:1px solid red; */
+        }
+        .c_reg {
+            margin-left : -120px;
+        }
+
+        #tb_name{
+            text-align:center;
+            /* border:1px solid red; */
+            font-size:24px;
+            padding-top : 40px;
+            margin-bottom : 20px
+        }
+        table {
+            border :1px solid rgb(214, 210, 218);
+            margin: 0 auto;
+        }
+
+     
+        table td {
+            border :1px solid rgb(214, 210, 218);
+        }
+        input {
+            border :1px solid rgb(214, 210, 218)
+        }
+        .col1 {
+            font-weight: bold;
+            font-size : 13px;
+            text-align: center;
+            width : 300px;
+        }
+        .col2 {
+            width : 250px;
+        }
+
+        .col2 input {
+            width : 150px;
+            border-radius : 2px;
+        }
+        
+        #reg_btn, #find_btn{
+            margin-left : 5px;
+            font-size: 11px;
+            padding : 1px;
+        }
+     
+        footer{
+            background-color: blue;
+            height : 40px;
+            line-height : 40px;
+            color : white;
+        }
+
+        .f_c{
+            font-size : 15px;
+        }
+
+        @media only screen and (max-width : 800px){
+            .c_li {/*클래스명*= 붙여서 입력 해야함 */
+                display:block;
+                   }
+            
+        }
+
+        /* .c_reg_p
+        .c_list_p
+        .c_buy_p
+        .c_home_p
+             */
+    </style>
+</head>
+<body>
+    <div id = "page">
+        <header>
+            <div class = "headline">
+                쇼핑몰 회원 관리 VER 1.0
+            </div>
+            <nav id = "mainmenu">
+                <ul class="main_ul">
+                    <li class="c_li" > 회원등록 </li>
+                    <li class="c_li"> 회원목록조회/수정</li>
+                    <li class="c_li">회원매출조회</li>
+                    <li class="c_li">홈으로</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="tb_name"><h4>쇼핑몰 회원 등록</h4></div>
+            <div>
+                <table>
+                <tr>
+                    <td class="col1">회원번호(자동발생)</td>
+                    <td class="col2"><input type="text"></td>
+                </tr>
+                <tr>
+                    <td class="col1">회원성명</td>
+                    <td class="col2"><input type="text"></td>
+                </tr>
+                <tr>
+                    <td class="col1">회원주소</td>
+                    <td class="col2"><input type="text"></td>
+                </tr>
+                <tr>
+                    <td class="col1">가입일자</td>
+                    <td class="col2"><input type="text"></td>
+                </tr>
+                <tr>
+                    <td class="col1">고객등급:[A:VIP,B:일반,C:직원]</td>
+                    <td class="col2"><input type="text"></td>
+                </tr>
+                <tr>
+                    <td class="col1">도시코드</td>
+                    <td class="col2"><input type="text"></td>
+                </tr>
+                <tr>
+                    <td align ="center" colspan="2"> <input id ="reg_btn" type="button" value="등록"><input id ="find_btn" type="button" value="조회"></td>
+                </tr>
+                </table>
+            </div>
+        </main>
+
+        <div id ="clear"></div>
+        <footer>
+            <div id ="footer">
+                <p class ="f_c">HRDKOREA Copyright@2016 All rights reserve. Human Resources Development Service of Korea</p>
+            </div>
+
+        </footer>
+
+
+
+
+
+
+
+
+    </div>
+    
+</body>
+</html>
