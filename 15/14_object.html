@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            position:absolute;
+            height:100%;
+            width: 100%;
+        }
+        #bigClock{
+            border: 2px solid red;
+            width:240px;
+            border-radius:5px;
+            font-size:20px;
+            margin:0 auto;
+            padding:10px;
+            position:relative;
+            top:50%;
+            transform:translateY(-25.5px);
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div id = "bigClock"></div>
+
+    <script>
+        function bigClock(){
+            var today = new Date();
+            var day = today.getFullYear()+"년 "+ today.getMonth() +"월 " + today.getDate()+"일 " + today.getMinutes() +"분 " +today.getSeconds()+"초";
+            document.getElementById("bigClock").textContent = day;
+            setTimeout("bigClock()",1000); // bigClock 함수를 1000ms 마다 새로고침
+        }
+        
+        //setInterval(bigClock,1)     
+        bigClock();
+    </script>
+</body>
+</html>

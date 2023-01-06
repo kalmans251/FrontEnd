@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "carname"></div>
+    <div id = "carcolor"></div>
+    <div id = "carspeed"></div>
+
+    <script>
+        //객체 = 속성,메소드(함수) 를 포함.
+        var car = {
+            name : 'sonata',
+            sppeed:100,
+            color:'red',
+            start(){
+                return this.sppeed+10;
+            }
+        };
+
+        //문서 (document) : <html> ~ </html> 까지를 document라 한다.
+        //태그 ( elemnet ) : 엘리먼트
+        
+        //태그(엘리먼트) 블락에 값을 넣는다.  HTML 형식으로 저장 , Text 형식으로 저장
+            // innerHTML : HTML 형식으로 저장.
+            // textContent : text 파일 형식으로 저장
+
+        
+
+        var carname = document.getElementById("carname");
+        var carcolor = document.getElementById("carcolor");
+        var carspeed = document.getElementById("carspeed");
+
+        carname.innerHTML = car.name;
+        carcolor.innerHTML = car.color;
+        carspeed.innerHTML = car.start();
+        
+    </script>
+
+
+</body>
+</html>

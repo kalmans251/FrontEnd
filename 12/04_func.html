@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  기본 함수와 무명함수의 우선 순위 알아보기
+            --기본 과 무명이 동시에 있을때 무명함수가 호출    
+    -->
+    <script>
+        // 무명
+        var printMsg = function(msg){
+            document.write("무명 함수 : " + msg + "<br>");
+        };
+
+        //기본
+        function printMsg(msg){
+            document.write("기본 함수 :  " + msg + "<br>");
+        }
+
+        printMsg("하이");
+
+    </script>
+    <!-- 기본함수-->
+</body>
+</html>

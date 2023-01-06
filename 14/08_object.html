@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <!-- 
+        객체의 속성을 추가 / 제거
+
+     -->
+
+
+    <p> [ Hong's Car ]</p>
+    <p id = "carname1"></p>
+    <p id = "carcolor1"></p>
+    <p id = "carspeed1"></p>
+    <p id = "price1"></p>
+    <p id = "model1"></p>
+    <hr>
+    <p> [ Kim's Car ]</p>
+    <p id = "carname2"></p>
+    <p id = "carcolor2"></p>
+    <p id = "carspeed2"></p>
+    <hr>
+    <p> [ Lee's Car ]</p>
+    <p id = "carname3"></p>
+    <p id = "carcolor3"></p>
+    <p id = "carspeed3"></p>
+
+    <script>
+        //함수의 생성자를 사용햇 ㅓ객체 생성 : 여러개의 객체를 매개변수를 사용해서 생성
+
+        // Car 함수를 호출하면서 매개변수로 값을 넣어서 한꺼번에 여러개를 생성 할 수 있다.
+        function Car(name , color , speed){
+            //속성
+            this.name = name;
+            this.color = color;
+            this.speed = speed;
+
+            
+            this.speedup = function(){
+                return this.speed+10;
+            }
+            this.speeddown = function(){
+                return this.speed-10;
+            }
+        }
+
+
+        var HongCar = new Car('sonata','blue',100);
+            //HongCar 에서 가격 속성을 추가 하기
+        HongCar.price = "3000만원";
+        HongCar.model = "소나타2";
+        var kimCar = new Car('jeep','red',70);
+        var LeeCar = new Car('Grandure','black',200);
+        
+        var cname1 = document.getElementById("carname1");
+        var ccolor1 = document.getElementById("carcolor1");
+        var cspeed1 = document.getElementById("carspeed1");
+        var cprice1 = document.getElementById("price1");
+        var cmodel1 = document.getElementById("model1");
+        
+        delete HongCar.name;
+        delete HongCar.color;
+
+        cname1.textContent = "자동차 이름 : " + HongCar.name;
+        ccolor1.textContent = "자동차 색깔 : " + HongCar.color;
+        cspeed1.textContent = "자동차 속도 : " + HongCar.speedup();
+        cprice1.textContent = "자동차 가격 : " + HongCar.price;
+        cmodel1.textContent = "자동차 모델 : " + HongCar.model;
+
+        var cname2 = document.getElementById("carname2");
+        var ccolor2 = document.getElementById("carcolor2");
+        var cspeed2 = document.getElementById("carspeed2");
+
+        cname2.textContent = "자동차 이름 : " + kimCar.name;
+        ccolor2.textContent = "자동차 색깔 : " + kimCar.color;
+        cspeed2.textContent = "자동차 속도 : " + kimCar.speedup();
+
+        var cname3 = document.getElementById("carname3");
+        var ccolor3 = document.getElementById("carcolor3");
+        var cspeed3 = document.getElementById("carspeed3");
+
+        cname3.textContent = "자동차 이름 : " + LeeCar.name;
+        ccolor3.textContent = "자동차 색깔 : " + LeeCar.color;
+        cspeed3.textContent = "자동차 속도 : " + LeeCar.speedup();
+
+    </script> 
+</body>
+</html>

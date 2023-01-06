@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main_p{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <p id="main_click" onclick ="clicked()"> ▲ 'XHTML'의 의미</p>
+    <p/>
+    <p id="main_p">XHTML(Extensible HyperText Markup Language)은 확장성이 있는 하이퍼 텍스트 마크업 언어이다.</p>
+
+    <script>
+        var mainCL= document.getElementById("main_click");
+        var mainP = document.getElementById("main_p");
+        var n = 0;
+        function clicked(){
+            n++
+            if(n%2==1){
+                mainP.style.display = "block";
+                mainCL.textContent=" ▼ 'XHTML'의 의미"
+
+            }else{
+                n=0
+                mainP.style.display = "none";
+                mainCL.textContent=" ▲ 'XHTML'의 의미"
+            }
+        }
+    </script>
+</body>
+</html>

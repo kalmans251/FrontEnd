@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        #main_header{
+            width: 100%;
+            font-size: 50px;
+            font-weight: bold;
+            float:left;
+            margin-left:60px;
+            margin-bottom:60px;
+        }
+        ul {
+            list-style-type: none;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+
+        #left_box{
+            float:left;
+            width:50%;
+        }
+        #right_box{
+            float:left;
+            width:50%;
+            font-size:30px;
+        }
+
+        #left_box ul li{
+            display: inline;
+        }
+        .wrap{
+            
+            box-shadow: 0px 0px 50px black;
+            width:1000px;
+            margin:0 auto;
+            height: 700px;
+        }
+       
+        #left_box ul li img{
+            width:116.666px;
+            height: 116.666px;
+        }
+        #left_box > div{
+            text-align: center;
+        }
+        #left_box > div:first-child{
+            margin-bottom:50px;
+            position:relative;
+        }
+        #detail{
+            display: none;
+            
+        }
+        
+        
+    </style>
+
+</head>
+<body>
+    <div class = "wrap">
+
+        <div id = "main_header">에디오피아 게뎁</div>
+
+        <div id="left_box">
+            <div>
+                <img src = "images/coffee-blue.jpg" id="big_img">
+                <div style="border:5px dashed gray;position:absolute;top:10px;left:88px;height:316px;width:316px;"></div>
+            </div>
+            <div>
+                <ul>
+                    <li><img src ="images/coffee-pink.jpg" data-src ="images/coffee-pink.jpg" class ="coffes_thumb"></li>
+                    <li><img src ="images/coffee-blue.jpg" data-src ="images/coffee-blue.jpg" class ="coffes_thumb"></li>
+                    <li><img src ="images/coffee-gray.jpg" data-src ="images/coffee-gray.jpg" class ="coffes_thumb"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="right_box">
+
+            <div style="line-height: 55px;">
+                상품명:에디오피아 게뎁 <br>
+                <span style="color:blue;font-weight: bold;">판매가:9,000원</span><br>
+                배송비:3,000원<br>
+                (50,000원 이상 구매시 무료)<br>
+                적립금 : 180원(2%)<br>
+                로스팅 : 2019.06.17<br>
+            </div>
+            <div>
+                <button type="button" onclick="window.open('https://www.naver.com')" style="width:400px;height: 70px;font-size: 30px;margin-top:70px;margin-bottom: 50px;">장바구니 담기</button>
+            </div>
+
+            <div><a href="#" id="view">상세 설명 보기</a></div>
+
+            <div id = "detail">ㅇ아림니ㅏㄻㄴ미ㅏㄴ어ㅣㄹㄴㅇㄹ남ㄹㅇ너ㅣㅏㅁㄹㅇㄴ</div>
+        </div>
+
+        <script>
+            /*
+                querySelector() : css - id : #, class : .
+                getElementById() : 태그 내부에 적용된 id
+                getElementsByClassName() : 태그 내부에 적용된 class 
+
+                엘리먼트(태그)의 속성값을 변경할 때 : 객체.setAttribute 를 사용함. id 속성에만 적용되어있다.
+                    class 속성에는 setAttribute 가 없다.
+            */
+
+            /*
+                DOM 객체를 생성
+            */
+            var a =0;
+            var coff_th= document.getElementsByClassName("coffes_thumb");
+            var big_im = document.getElementById("big_img");
+            var view = document.getElementById("view");
+            var detail = document.getElementById("detail");
+            for(let i = 0 ; i < coff_th.length ; i++){
+                coff_th[i].addEventListener("click",events)
+            }
+
+            function events(){
+                var data = this.getAttribute("data-src");
+                big_im.setAttribute("src",data);
+            }
+
+            view.onclick = function(){
+                a++;
+                if(a%2 == 0){
+                    detail.style.display = "none";
+                    a=0;
+                }else{
+                    detail.style.display = "block";
+                }
+            }
+
+        </script>
+
+
+
+
+    </div>
+</body>
+</html>

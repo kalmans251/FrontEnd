@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //insert 함수 : 배열의 각 방에 1 ~ 100 까지 자동으로 저장
+        //
+        var arr = new Array(); //배열 번수 선언
+
+        //insert 후 출력
+        function insert(){
+            for(var i = 1 ; i <= 100 ; i++ ){
+                arr[i-1]= i;
+                document.write(arr[i-1] + " ");
+            }
+            document.write("<p/>");
+            document.write("<a href = '22_arr.html'>되돌아가기</a> ")
+            
+            deleteArr();
+        }
+        //2 의 배수가 아닌 데이터만  삭제.
+        function deleteArr(){
+            for(var i = 0 ; i < arr.length ; i++ ){
+                if((arr[i]%2)!=0){
+                    arr[i] = 0;
+                }
+            }
+
+            selectArr();
+        }
+
+        function selectArr(){
+            for( var i = 0 ; i < arr.length ; i++ ){
+                document.write(arr[i] + " ");
+            }
+            document.write("<p/>");
+            document.write("<a href = '22_arr.html'>되돌아가기</a> ")
+        }
+        
+    </script>
+
+    <button type="button" onclick = "insert()"> insert() 실행</button>
+    <button type="button" onclick = "deleteArr()"> deleteArr() 실행</button>
+    <button type="button" onclick = "selectArr()"> selectArr() 실행</button>
+
+
+</body>
+</html>
